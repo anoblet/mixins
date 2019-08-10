@@ -2,7 +2,7 @@
   "name": "@anoblet/mixins",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/mixins.js",
   "scripts": {
     "build": "rollup --config",
     "save": "git add . && git commit -m \"Chore: Save\"",

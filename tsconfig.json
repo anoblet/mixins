@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "declaration": true,
+    "declarationDir": "./dist"
   }
 }

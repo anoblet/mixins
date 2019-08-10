@@ -1,9 +1,9 @@
 import typescript from "rollup-plugin-typescript";
 
 export default {
-  input: "./src/BeforeRender.ts",
+  input: "./src/Mixins.ts",
   output: {
-    file: "dist/before-render.js",
+    file: "dist/mixins.js",
     format: "esm"
   },
   plugins: [typescript()]

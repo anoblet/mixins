@@ -1,0 +1,1 @@
+{"code":"import BeforeRender from \"./BeforeRender\";\r\nexport { BeforeRender };\r\n","references":["C:/Users/Andy/Web Development/packages/mixins/src/BeforeRender.ts"],"dts":{"name":"C:/Users/Andy/Web Development/packages/mixins/index.d.ts","writeByteOrderMark":false,"text":"import BeforeRender from \"./BeforeRender\";\r\nexport { BeforeRender };\r\n"}}

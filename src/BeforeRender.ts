@@ -1,9 +1,15 @@
 import { LitElement, property } from "lit-element";
 
-type Constructor<T = {}> = new (...args: any[]) => T;
+type Constructor = new (...args: any[]) => LitElement;
 
-function BeforeRender<TBase extends Constructor<LitElement>>(Base: TBase) {
-  class MixinClass extends Base {
+interface BeforeRenderMixin {
+  beforeRenderComplete: Boolean;
+}
+
+type ReturnConstructor = new (...args: any[]) => LitElement & BeforeRenderMixin;
+
+export default function<B extends Constructor>(Base: B): B & ReturnConstructor {
+  class Mixin extends Base implements BeforeRenderMixin {
     @property({ type: Boolean })
     public beforeRenderComplete: boolean = false;
 
@@ -22,7 +28,5 @@ function BeforeRender<TBase extends Constructor<LitElement>>(Base: TBase) {
     }
   }
 
-  return MixinClass;
+  return Mixin;
 }
-
-export default BeforeRender;

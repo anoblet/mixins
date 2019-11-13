@@ -2,9 +2,7 @@ import { LitElement, property } from "lit-element";
 
 type Constructor = new (...args: any[]) => LitElement;
 
-interface BeforeRenderMixin {
-  beforeRenderComplete: Boolean;
-}
+interface BeforeRenderMixin {}
 
 type ReturnConstructor = new (...args: any[]) => LitElement & BeforeRenderMixin;
 

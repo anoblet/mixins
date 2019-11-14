@@ -1,2 +1,2 @@
-import BeforeRender from "./BeforeRender";
-export { BeforeRender };
+import BeforeRenderMixin from "./BeforeRender";
+export { BeforeRenderMixin };

@@ -46,4 +46,4 @@ function BeforeRender (Base) {
     return Mixin;
 }
 
-export { BeforeRender };
+export { BeforeRender as BeforeRenderMixin };

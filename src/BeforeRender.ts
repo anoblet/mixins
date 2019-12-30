@@ -2,7 +2,7 @@ import { LitElement, property } from "lit-element";
 
 type Constructor = new (...args: any[]) => LitElement;
 
-interface BeforeRenderMixin {}
+export interface BeforeRenderMixin {}
 
 type ReturnConstructor = new (...args: any[]) => LitElement & BeforeRenderMixin;
 

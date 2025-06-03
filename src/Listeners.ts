@@ -1,4 +1,4 @@
-import { LitElement, property } from "lit-element";
+import { LitElement } from 'lit';
 
 type Constructor = new (...args: any[]) => LitElement;
 

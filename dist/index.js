@@ -1,4 +1,4 @@
-import { property } from 'lit-element';
+import { property } from 'lit/decorators.js';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
